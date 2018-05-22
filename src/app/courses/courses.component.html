@@ -1,0 +1,14 @@
+<i>
+  <ol *ngFor="let course of courses">
+    {{course}}
+  </ol>
+  <!-- <button (onclick) = btnClicked(), class="btn btn-primary" [class.active]= "isActive">Save</button> -->
+  <button (click) = "getClicked()">Save</button>
+  <button class="btn btn-primary" [style.backgroundColor]="isActive? 'red' :'green'"  >Save</button>
+  <input (keyup.enter) = "onKeyUp()"/>
+
+  <input [(ngModel)] = "email" (keyup.enter) = "getEmail()"/>
+
+
+  <img [src] = "imageUrl">
+</i>
